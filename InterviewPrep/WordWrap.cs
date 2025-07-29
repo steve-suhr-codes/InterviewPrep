@@ -5,7 +5,7 @@ using System.Text;
 namespace InterviewPrep
 {
     /// <summary>
-    /// Give a long string, break it into lines that contain as many words as possible up to
+    /// Given a long string, break it into lines that contain as many words as possible up to
     /// a certain length. Concatenate words with a "-". If a single word is longer than the max
     /// wrap that word.
     /// </summary>
