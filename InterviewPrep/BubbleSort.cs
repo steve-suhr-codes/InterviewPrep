@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 namespace InterviewPrep
@@ -7,10 +7,13 @@ namespace InterviewPrep
     /// Given a list of strings, sort them.
     /// This solution uses a simple bubble sort.
     /// </summary>
-    public static class BubbleSort
-	{
-		public static void Run()
-		{
+    public class BubbleSort : IQuestion
+    {
+        public string Command => "bubble-sort";
+        public string Description => "Run the BubbleSort question";
+
+        public void Run()
+        {
             var listToSort = new List<string> { "asdf", "zxy", "kdcn", "bdns" };
 
             Console.WriteLine("Unsorted List");
@@ -43,4 +46,3 @@ namespace InterviewPrep
         }
     }
 }
-
