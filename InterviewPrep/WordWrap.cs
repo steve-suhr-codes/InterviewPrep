@@ -1,18 +1,18 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace InterviewPrep
 {
-    /// <summary>
-    /// Given a long string, break it into lines that contain as many words as possible up to
-    /// a certain length. Concatenate words with a "-". If a single word is longer than the max
-    /// wrap that word.
-    /// </summary>
-	public static class WordWrap
-	{
-		public static void Run()
-		{
+    public class WordWrap : IQuestion
+    {
+        public string Command => "word-wrap";
+        public string Description => @"Given a long string, break it into lines that contain as many words as possible up to
+a certain length. Concatenate words with a ""-"". If a single word is longer than the max 
+wrap that word.";
+
+        public void Run()
+        {
             var textToWrap = "reeeeeaaaalllylongword I test something test as something to test. More text here.";
             var lineLength = 10;
             var linesToWrap = textToWrap.Split(" ");
@@ -51,4 +51,3 @@ namespace InterviewPrep
         }
     }
 }
-
