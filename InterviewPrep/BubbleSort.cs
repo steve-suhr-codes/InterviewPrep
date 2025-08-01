@@ -3,14 +3,10 @@ using System.Collections.Generic;
 
 namespace InterviewPrep
 {
-    /// <summary>
-    /// Given a list of strings, sort them.
-    /// This solution uses a simple bubble sort.
-    /// </summary>
     public class BubbleSort : IQuestion
     {
         public string Command => "bubble-sort";
-        public string Description => "Run the BubbleSort question";
+        public string Description => @"Given a list of strings, sort them. This solution uses a simple bubble sort.";
 
         public void Run()
         {

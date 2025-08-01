@@ -4,15 +4,12 @@ using System.Text;
 
 namespace InterviewPrep
 {
-    /// <summary>
-    /// Given a long string, break it into lines that contain as many words as possible up to
-    /// a certain length. Concatenate words with a "-". If a single word is longer than the max
-    /// wrap that word.
-    /// </summary>
     public class WordWrap : IQuestion
     {
         public string Command => "word-wrap";
-        public string Description => "Run the WordWrap question";
+        public string Description => @"Given a long string, break it into lines that contain as many words as possible up to
+a certain length. Concatenate words with a ""-"". If a single word is longer than the max 
+wrap that word.";
 
         public void Run()
         {
