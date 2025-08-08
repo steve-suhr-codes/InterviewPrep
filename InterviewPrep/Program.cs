@@ -10,7 +10,12 @@ namespace InterviewPrep
             var questions = new IQuestion[]
             {
                 new WordWrap(),
-                new BubbleSort()
+                new BubbleSort(),
+                new TwoSum(),
+                new ReverseLinkedList(),
+                new ValidParentheses(),
+                new Fibonacci(),
+                new RotateArray()
             };
 
             var rootCommand = new RootCommand("InterviewPrep questions");
